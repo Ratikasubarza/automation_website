@@ -1,0 +1,35 @@
+{
+  "chromeWebSecurity": false,
+  "projectId": "drhhcq",
+  "testFiles": "**/*.{feature,features}",
+  "ignoreTestFiles": ["**/stepDefinitions/*","*.js", "*.md"],
+  "defaultCommandTimeout": 30000,
+  "responseTimeout": 30000,
+  "requestTimeout":30000,
+  "taskTimeout":30000,
+  "waitForAnimations": true,
+  "ensureScrollable": false,
+  "viewportWidth": 1280,
+  "viewportHeight": 800,
+  "pageLoadTimeout": 30000,
+  "env": {
+    "db": {
+      "host": "http://ecomm-aurora-magento02-cluster.cluster-c3esfxyganoi.ap-southeast-1.rds.amazonaws.com/",
+      "databasename": "'tbsecommdb_revamp",
+      "username": "magento",
+      "password": "M4g3nt0TB$"
+    },
+  
+  "reporter": "cypress-multi-reporters",
+    "reporterOptions": {
+        "reporterEnabled": "mochawesome",
+        "mochawesomeReporterOptions": {
+            "reportDir": "cypress/reports/mocha",
+            "quite": true,
+            "overwrite": false,
+            "html": false,
+            "json": false
+        }
+    }
+  }
+}

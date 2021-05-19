@@ -1,0 +1,7 @@
+{
+  "ruleSettings": {
+    "badPhrases": {
+      "additionalUntestable": ["because"]      
+    }
+  }
+}
