@@ -1,0 +1,233 @@
+[
+  {
+    "description": "    As a user should be sarch the product and looks the product details ",
+    "keyword": "Feature",
+    "name": "Catalog",
+    "line": 1,
+    "id": "catalog",
+    "tags": [],
+    "uri": "catalog.feature",
+    "elements": [
+      {
+        "id": "catalog;veriy-success-to-search-a-product",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "Veriy success to search a product",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "I click search button at homepage & input white musk",
+            "result": {
+              "status": "passed",
+              "duration": 13423000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "Should be success to search product the white musk and list of product will be showing",
+            "result": {
+              "status": "passed",
+              "duration": 1725000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "catalog;verify-success-to-search-product.-if-input-1-word",
+        "keyword": "Scenario",
+        "line": 10,
+        "name": "Verify success to search product. If input 1 word",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 11,
+            "name": "I click search button at homepage & input body",
+            "result": {
+              "status": "passed",
+              "duration": 10123000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "should be success to search product with input 1 word and list of product will be showing",
+            "result": {
+              "status": "passed",
+              "duration": 2236000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "catalog;verify-success-search-product-with-sku-number",
+        "keyword": "Scenario",
+        "line": 14,
+        "name": "Verify success search product with SKU number",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 15,
+            "name": "I click search button at home page & input SKU number",
+            "result": {
+              "status": "passed",
+              "duration": 11773000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 16,
+            "name": "Should be success to search product with SKU number and the product will be showing",
+            "result": {
+              "status": "passed",
+              "duration": 2106000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "catalog;verify-search-product.-if-no-product-search",
+        "keyword": "Scenario",
+        "line": 18,
+        "name": "Verify search product. If no product search",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 19,
+            "name": "I click search button at home page & input invalid word",
+            "result": {
+              "status": "passed",
+              "duration": 13938000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 20,
+            "name": "The popup will be showing and verify the error message",
+            "result": {
+              "status": "passed",
+              "duration": 12522000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "catalog;check-functional-tab-stories-button-from-popup-search-product.-if-there-are-product-list",
+        "keyword": "Scenario",
+        "line": 22,
+        "name": "Check functional tab stories button from popup search product. If there are product list",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 23,
+            "name": "I click search button at homepage & input white musk",
+            "result": {
+              "status": "passed",
+              "duration": 14696000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 24,
+            "name": "Should be success to search product the white musk and list of product will be showing",
+            "result": {
+              "status": "passed",
+              "duration": 2734000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 25,
+            "name": "I click tab button stories",
+            "result": {
+              "status": "passed",
+              "duration": 2329000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 26,
+            "name": "The functional button should be works well",
+            "result": {
+              "status": "passed",
+              "duration": 11078000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "catalog;check-functional-tab-journal-button-from-popup-search-product.-if-there-are-product-list",
+        "keyword": "Scenario",
+        "line": 28,
+        "name": "Check functional tab journal button from popup search product. If there are product list",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 29,
+            "name": "I click search button at homepage & input white musk",
+            "result": {
+              "status": "passed",
+              "duration": 12265000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 30,
+            "name": "Should be success to search product the white musk and list of product will be showing",
+            "result": {
+              "status": "passed",
+              "duration": 2552000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 31,
+            "name": "I click tab button journal",
+            "result": {
+              "status": "passed",
+              "duration": 1051000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 32,
+            "name": "The functional button should be works well",
+            "result": {
+              "status": "passed",
+              "duration": 10722000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

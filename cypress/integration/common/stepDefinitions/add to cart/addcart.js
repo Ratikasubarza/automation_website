@@ -15,7 +15,7 @@ Then('Should be popup shoping cart display & verify continue shoping button will
 
 // Verify success add to bag product from homepage
 Given('I scroll untill footer MUST BUY',()=>{
-   cy.get('#maincontent > div.columns > div > div:nth-child(4) > div > div.collection-slider > div > div.owl-carousel-custom-2.owl-carousel.owl-theme.owl-loaded > div.owl-thumbs').scrollIntoView({ offset: { top: 150, left: 0 } })
+   cy.get('#maincontent > div.columns > div > div:nth-child(4) > div > div.collection-slider > div > div.owl-carousel-custom-2.owl-carousel.owl-theme.owl-loaded > div.owl-thumbs').scrollIntoView({ offset: { top: 125, left: 0 } })
 })
         
 And('I click add to bag Ayr20-Radiant Matte 3',()=>{
@@ -72,7 +72,7 @@ Then('Should be success to add to cart & verify name product selected',()=>{
 
 // Check functional button checkout from product page
 Given('I click add to bag button on SKIN CONTROL HYDRATOR TEA TREE 40ML product & verify mini cart showing', ()=>{
-    cy.get('#ui-id-4 ').click()
+    cy.get('#ui-id-4 > :nth-child(1)').click({force:true})
     .wait(10000)
     cy.get('#maincontent > div.columns > div.column.main.infinite-scroll > div.products.wrapper.grid.products-grid > ol > li:nth-child(3) > div > div.product_image > div.addtocart_position_2.center > form > input[type=hidden]:nth-child(3)')
     .invoke('show')
@@ -81,8 +81,7 @@ Given('I click add to bag button on SKIN CONTROL HYDRATOR TEA TREE 40ML product 
     cy.get('#minicart-content-wrapper > .block-content');
     cy.get('#mini-cart > .item > :nth-child(1)')
     .invoke('show', '#minicart-content-wrapper')
-    .should('be.visible')
-    .click({force:true})
+    .should('be.visible');
 });
 
 And('I click button go to checkout ', ()=>{

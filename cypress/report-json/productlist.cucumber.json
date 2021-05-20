@@ -1,0 +1,51 @@
+[
+  {
+    "description": "    As a user will be get the information product ",
+    "keyword": "Feature",
+    "name": "Product list",
+    "line": 1,
+    "id": "product-list",
+    "tags": [],
+    "uri": "productlist.feature",
+    "elements": [
+      {
+        "id": "product-list;verify-success-to-product-details-page",
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "Verify success to product details page",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "I click shop button at homepage",
+            "result": {
+              "status": "undefined",
+              "duration": 14154000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "I click image product",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "Should be directly to product details page & verify the information of product details",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

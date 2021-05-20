@@ -23,7 +23,7 @@
             "name": "I scroll untill footer MUST BUY",
             "result": {
               "status": "passed",
-              "duration": 12951000000
+              "duration": 17483000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "I click add to bag Ayr20-Radiant Matte 3",
             "result": {
               "status": "passed",
-              "duration": 7741000000
+              "duration": 8134000000
             }
           },
           {
@@ -43,7 +43,7 @@
             "name": "The product success to added",
             "result": {
               "status": "passed",
-              "duration": 248000000
+              "duration": 265000000
             }
           }
         ]
@@ -63,7 +63,7 @@
             "name": "I click shop button",
             "result": {
               "status": "passed",
-              "duration": 9063000000
+              "duration": 14387000000
             }
           },
           {
@@ -73,7 +73,7 @@
             "name": "I click makeup category button",
             "result": {
               "status": "passed",
-              "duration": 2677000000
+              "duration": 6105000000
             }
           },
           {
@@ -83,7 +83,7 @@
             "name": "I click blusher button & verify blusher product page",
             "result": {
               "status": "passed",
-              "duration": 5962000000
+              "duration": 7186000000
             }
           },
           {
@@ -93,7 +93,7 @@
             "name": "I click add to bag button from IN ONE BLUSH 06 4G product",
             "result": {
               "status": "passed",
-              "duration": 666000000
+              "duration": 11253000000
             }
           },
           {
@@ -103,7 +103,7 @@
             "name": "Should be success to add to cart & verify name product selected",
             "result": {
               "status": "passed",
-              "duration": 423000000
+              "duration": 310000000
             }
           }
         ]
@@ -122,8 +122,8 @@
             "line": 23,
             "name": "I click add to bag button on SKIN CONTROL HYDRATOR TEA TREE 40ML product & verify mini cart showing",
             "result": {
-              "status": "failed",
-              "error_message": "AssertionError: Timed out retrying after 30000ms: Expected to find element: `#maincontent > div.columns > div.column.main > div.products.wrapper.grid.products-grid > ol > li:nth-child(1) > div > div.product_image > div.addtocart_position_2.center > form > button`, but never found it.\n    at Context.eval (https://magento-2.tbsgroup.co.id/__cypress/tests?p=cypress\\integration\\feature\\addtocart\\addtocart.feature:72:6)\n    at Context.resolveAndRunStepDefinition (https://magento-2.tbsgroup.co.id/__cypress/tests?p=cypress\\integration\\feature\\addtocart\\addtocart.feature:10741:9)\n    at Context.eval (https://magento-2.tbsgroup.co.id/__cypress/tests?p=cypress\\integration\\feature\\addtocart\\addtocart.feature:10080:35)"
+              "status": "passed",
+              "duration": 40318000000
             }
           },
           {
@@ -132,7 +132,7 @@
             "line": 24,
             "name": "I click checkout button",
             "result": {
-              "status": "skipped"
+              "status": "undefined"
             }
           },
           {
@@ -161,7 +161,7 @@
             "name": "I click button qty on shopping cart & verify the popup information will be displayed",
             "result": {
               "status": "passed",
-              "duration": 52719000000
+              "duration": 62125000000
             }
           },
           {
@@ -171,44 +171,7 @@
             "name": "I click button continue shoping & Show cart popup will be close",
             "result": {
               "status": "passed",
-              "duration": 683000000
-            }
-          }
-        ]
-      },
-      {
-        "id": "add-to-bag-product-to-shopping-cart;check-functional-button-go-to-checkout-from-shopping-cart-summary-on-chekout-cart-page",
-        "keyword": "Scenario",
-        "line": 47,
-        "name": "Check functional button go to checkout from shopping-cart summary on chekout cart page",
-        "tags": [],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 48,
-            "name": "Im on checkout cart page & verify shopping-cart summary",
-            "result": {
-              "status": "undefined"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 49,
-            "name": "I click button go to checkout",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 50,
-            "name": "should be direct to account login page",
-            "result": {
-              "status": "skipped"
+              "duration": 949000000
             }
           }
         ]
