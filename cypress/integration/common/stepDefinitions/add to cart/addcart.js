@@ -4,18 +4,18 @@ import _ from 'lodash';
 
 //Verify success click icon cart button. When null product in shoping cart
 Given('I click icon cart button ', ()=>{
+    cy.get ('.panel.wrapper > .panel').click()
     cy.get('body > div.page-wrapper > div.header-placeholder > div > header > div.panel.wrapper > div > div > div > a').trigger('click');
 })
 
 Then('Should be popup shoping cart display & verify continue shoping button will be display', ()=>{
-    cy.get('#minicart-content-wrapper > .block-content')
-    .invoke('show')
-    .should('be.visible');
+    cy.get('#minicart-content-wrapper > div.block-content.block-content-quickcart').should('be.visible');
+    cy.title('Shopping-Cart');
 })
 
 // Verify success add to bag product from homepage
 Given('I scroll untill footer MUST BUY',()=>{
-   cy.get('#maincontent > div.columns > div > div:nth-child(4) > div > div.collection-slider > div > div.owl-carousel-custom-2.owl-carousel.owl-theme.owl-loaded > div.owl-thumbs').scrollIntoView({ offset: { top: 120, left: 0 } })
+   cy.get('#maincontent > div.columns > div > div:nth-child(4) > div > div.collection-slider > div > div.owl-carousel-custom-2.owl-carousel.owl-theme.owl-loaded > div.owl-thumbs').scrollIntoView({ offset: { top: 150, left: 0 } })
 })
         
 And('I click add to bag Ayr20-Radiant Matte 3',()=>{
@@ -28,22 +28,9 @@ Then('The product success to added',()=>{
     .contains('You added AYR20 - RADIANT MATTE 3 to your shopping cart.');
 });
 
-// Verify success to add to bag from product page
-Given('I click add to bag button on SKIN CONTROL HYDRATOR TEA TREE 40ML product', ()=>{
-    cy.get('#ui-id-4 > :nth-child(1)').click({timeout:10000});;
-    cy.get('#maincontent > div.columns > div.column.main.infinite-scroll > div.products.wrapper.grid.products-grid > ol > li:nth-child(3) > div > div.product_image > div.addtocart_position_2.center > form > button > span').click({force: true})
-})
-    
-Then('Verify success message to add cart & mini cart showing', ()=>{
-    cy.get('.message-success > div').title('You added SKIN CONTROL HYDRATOR TEA TREE 40ML to your ');
-    cy.get('#minicart-content-wrapper > .block-content');
-    cy.get('#mini-cart > .item > :nth-child(1)')
-    .invoke('show', '#minicart-content-wrapper')
-});
-
 //Verify success to add to bag product from makeup category product
 Given('I click shop button',()=>{
-    cy.get('#ui-id-4 > :nth-child(1)')
+    cy.get('#ui-id-4')
     .should('be.visible')
     .trigger('#ui-id-4 > span.drill-opener')
     .invoke('show', '.dropdown-menu > :nth-child(1)')
@@ -85,9 +72,11 @@ Then('Should be success to add to cart & verify name product selected',()=>{
 
 // Check functional button checkout from product page
 Given('I click add to bag button on SKIN CONTROL HYDRATOR TEA TREE 40ML product & verify mini cart showing', ()=>{
-    cy.get('#ui-id-4 > :nth-child(1)').click()
+    cy.get('#ui-id-4 ').click()
     .wait(10000)
-    cy.get('#maincontent > div.columns > div.column.main > div.products.wrapper.grid.products-grid > ol > li:nth-child(1) > div > div.product_image > div.addtocart_position_2.center > form > button').click({force:true})
+    cy.get('#maincontent > div.columns > div.column.main.infinite-scroll > div.products.wrapper.grid.products-grid > ol > li:nth-child(3) > div > div.product_image > div.addtocart_position_2.center > form > input[type=hidden]:nth-child(3)')
+    .invoke('show')
+    cy.get('#maincontent > div.columns > div.column.main.infinite-scroll > div.products.wrapper.grid.products-grid > ol > li:nth-child(3) > div > div.product_image > div.addtocart_position_2.center > form > button > span').click({force:true})
     cy.get('.message-success > div').title('You added SKIN CONTROL HYDRATOR TEA TREE 40ML to your ')
     cy.get('#minicart-content-wrapper > .block-content');
     cy.get('#mini-cart > .item > :nth-child(1)')
@@ -96,11 +85,11 @@ Given('I click add to bag button on SKIN CONTROL HYDRATOR TEA TREE 40ML product 
     .click({force:true})
 });
 
-When('I click checkout button', ()=>{
+And('I click button go to checkout ', ()=>{
     cy.get('#top-cart-btn-checkout').click({force: true})
 })
 
-Then('Should be success direct to customer login page', ()=>{
+Then('should be direct to account login page', ()=>{
     cy.get('#maincontent > div.page-title-wrapper > h1 > span').invoke('show');
     cy.title('customer login page');
 });
@@ -108,7 +97,8 @@ Then('Should be success direct to customer login page', ()=>{
 
 //Check functional button continue shopping in show cart from product page
 Given('I click button qty on shopping cart & verify the popup information will be displayed',()=>{
-    cy.get('#ui-id-4 > :nth-child(1)').click()
+    cy.get('#ui-id-4').click()
+    .should('be.visible')
     .wait(10000)
     cy.get('#maincontent > div.columns > div.column.main.infinite-scroll > div.products.wrapper.grid.products-grid > ol > li:nth-child(3) > div > div.product_image > div.addtocart_position_2.center > form > button > span').click({force:true})
     .wait(10000)
