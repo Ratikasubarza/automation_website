@@ -14,10 +14,10 @@
   "pageLoadTimeout": 30000,
   "env": {
     "db": {
-      "host": "http://ecomm-aurora-magento02-cluster.cluster-c3esfxyganoi.ap-southeast-1.rds.amazonaws.com/",
-      "databasename": "'tbsecommdb_revamp",
-      "username": "magento",
-      "password": "M4g3nt0TB$"
+      "host": "",
+      "databasename": "",
+      "username": "",
+      "password": ""
     },
   
   "reporter": "cypress-multi-reporters",
